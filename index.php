@@ -6,7 +6,7 @@
 if (!empty($_POST['email'])) {
 
     // Sending invitation by email
-    header('Location: send_email.php');
+    header('Location: send_email.php?email='.$_POST['email']);
     exit;
 
 }
