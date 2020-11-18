@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6, p,
 a, img, ol, ul, li, input,
 footer, header, menu, nav
 {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
@@ -31,14 +32,47 @@ input {
 }
 
 /* style de la page */
-html, body {
+html {
     height: 100%;
 }
 body {
+    height: 60%;
     background: no-repeat center/cover url("../img/background_opt.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+form > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.email {
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #B2B2B2;
+    color: #8D8B8B;
+}
+.submit {
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    background-color: #C30078;
+}
+.submit svg {
+    height: 50px;
+    width: 50px;
+    fill: currentColor;
+    margin-left: 10px;
 }
 .delivery_sent {
     background-color: green;
