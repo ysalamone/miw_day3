@@ -1,7 +1,7 @@
 /* reset */
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p,
-a, img, ol, ul, li,
+a, img, ol, ul, li, input,
 footer, header, menu, nav
 {
     margin: 0;
