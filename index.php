@@ -27,24 +27,9 @@ if (!empty($_GET['delivery']) and $_GET['delivery'] === "sent") {
 <html lang="fr">
 
 <head>
-
-    <title></title>
-
-    <style type="text/css">
-        html, body {
-            height: 100%;
-        }
-        body {
-            background: no-repeat center/cover url("img/background_opt.jpg");
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .delivery_sent {
-            background-color: green;
-        }
-    </style>
-
+    <meta charset="utf8"/>
+    <title>MIW Party</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="<?= $body_class ?>">
 
