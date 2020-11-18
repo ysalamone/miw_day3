@@ -31,6 +31,15 @@ if (!empty($_GET['delivery']) and $_GET['delivery'] === "sent") {
     <title></title>
 
     <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+        body {
+            background: no-repeat center/cover url("img/background_opt.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .delivery_sent {
             background-color: green;
         }
