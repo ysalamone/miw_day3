@@ -2,8 +2,7 @@
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p,
 a, img, ol, ul, li, input,
-footer, header, menu, nav
-{
+footer, header, menu, nav {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,21 +11,26 @@ footer, header, menu, nav
     font-family: sans-serif;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 input {
     -webkit-appearance: none;
 }
@@ -35,6 +39,7 @@ input {
 html {
     height: 100%;
 }
+
 body {
     height: 60%;
     background: no-repeat center/cover url("../img/background_opt.jpg");
@@ -42,38 +47,68 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 form {
-    width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
+
 form > * {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85px;
-    margin: 5px;
-    font-size: 25px;
+    height: 60px;
+    margin: 5px 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0 20px;
 }
+
 .email {
-    flex-grow: 1;
-    border-radius: 5px 0 0 5px;
     border: 2px solid #B2B2B2;
     color: #8D8B8B;
 }
+
 .submit {
-    border-radius: 0 5px 5px 0;
     color: #fff;
     background-color: #C30078;
 }
+
 .submit svg {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     fill: currentColor;
     margin-left: 10px;
 }
+
 .delivery_sent {
     background-color: green;
 }
+
+@media screen and (min-width: 768px) {
+
+    form {
+        flex-direction: row;
+    }
+
+    form > * {
+        height: 85px;
+        margin: 5px;
+        font-size: 25px;
+    }
+
+    .email {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .submit {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .submit svg {
+        height: 50px;
+        width: 50px;
+
+    }
