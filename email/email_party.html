@@ -17,15 +17,19 @@
 
         table, table td {
             border: 1px solid black;
+        }
+        table {
             color: #354052;
             background: #fff;
         }
         .header {
             height: 400px;
             background: no-repeat center/cover url("../img/background_opt.jpg");
-            color: #fff;
-            text-align: right;
-            padding: 15px;
+        }
+        .container {
+            width: 100%;
+            font-family: Arial, sans-serif;
+            padding: 16px;
         }
         .tuileInfo {
             width: 190px;
@@ -33,83 +37,208 @@
             text-align: center;
             font-size: 20px;
         }
+        .tuileMiss {
+            width: 290px;
+            padding: 35px 0;
+            text-align: center;
+            font-size: 20px;
+        }
         .picto {
             width: 42px;
             height: 42px;
-            padding-bottom: 11px;
+        }
+        .bouton {
+            display: inline-block;
+            line-height: 3;
+            color: #fff;
+            background-color: #C30078;
+            text-decoration: none;
+            width: 100%;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
         }
         @media screen and (min-width: 768px) {
+            .header {
+                height: 450px;
+            }
+            .container {
+                width: 700px;
+                position: relative;
+                top: -50px;
+            }
             .tuileInfo {
-                width: 256px;
+                width: 233px;
+                display: inline-table;
+            }
+            .tuileMiss {
+                width: 350px;
                 display: inline-table;
             }
         }
     </style>
 
-<table cellpadding="0" cellspacing="0" style="width: 100%; font-family: Arial">
+<table cellpadding="0" cellspacing="0" style="width: 100%; font-family: Arial;">
     <tr>
         <td class="header" align="center">
-            <div style="width: 100%; max-width: 768px;">
-                <p style="font-family: 'Arial Black'; font-size: 60px; line-height: 1; padding-top: 200px">XMAS PARTY</p>
-                <p style="font-size: 30px; padding-top: 15px;">Jeu. 19 déc. à GAP</p>
-            </div>
+            <table cellpadding="0" cellspacing="0" style="width: 100%; height: 100%; max-width: 700px; padding: 200px 20px 0 20px; color: #fff; background-color: initial; text-align: right">
+                <tr>
+                    <td height="200">
+                        <h1 style="font-family: 'Arial Black', sans-serif; font-size: 60px; line-height: 1;">XMAS PARTY</h1>
+                        <p style="font-size: 30px; padding-top: 15px;">Jeu. 19 déc. à GAP</p>
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
     <tr>
         <td align="center">
-            <table cellpadding="0" cellspacing="0" style="/*position: relative; top: -50px;*/ width: 100%; max-width: 768px; padding: 20px 0; text-align: center">
+            <table class="container" cellpadding="0" cellspacing="0" style=" width: 100%; max-width: 700px; text-align: center">
                 <tr>
-                    <td style="font-weight: bold;">
-                        <p style="font-size: 20px; line-height: 4">!! PLACES LIMITÉES !!</p>
-                        <p style="font-size: 30px;">À La + Grosse Soirée Étudiante</p>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" style=" width: 100%; padding: 20px 0;">
+                            <tr>
+                                <td>
+                                    <h2 style="font-size: 20px; line-height: 4">!! PLACES LIMITÉES !!</h2>
+                                    <h2 style="font-size: 30px;">À La + Grosse Soirée Étudiante</h2>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
-            </table>
-            <table cellpadding="0" cellspacing="0" style="width: 100%; max-width: 768px; text-align: center">
-                <tr align="center">
-                    <td><!--
-                    --><table cellpadding="0" cellspacing="0" class="tuileInfo">
-                            <tr>
-                                <td>
-                                    <svg class="picto"><use xlink:href="#map" </svg>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>1er étage</p>
-                                    <p>Bâtiment MIW</p>
-                                    <p>15/12/2019 à 20h</p>
-                                </td>
-                            </tr>
-                        </table><!--
-                        --><table cellpadding="0" cellspacing="0" class="tuileInfo">
-                            <tr>
-                                <td>
-                                    <svg class="picto"><use xlink:href="#play" </svg>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>RnB, Hip Hop, Latino, House, Electro</p>
-                                </td>
-                            </tr>
-                        </table><!--
-                        --><table cellpadding="0" cellspacing="0" class="tuileInfo">
-                            <tr>
-                                <td>
-                                    <svg class="picto"><use xlink:href="#map" </svg>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>15€ + 1 conso</p>
-                                    <p><small>(sur présentation de cet email)</small></p>
-                                </td>
-                            </tr>
-                        </table><!--
-                    --></td>
+                <tr>
+                    <td><table cellpadding="0" cellspacing="0" style="width: 100%;">
+                        <tr align="center">
+                            <td><!--
+                            --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                                <tr>
+                                    <td style="padding-bottom: 11px">
+                                        <svg class="picto"><use xlink:href="#map"</svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1er étage</p>
+                                        <p>Bâtiment MIW</p>
+                                        <p>15/12/2019 à 20h</p>
+                                    </td>
+                                </tr>
+                            </table><!--
+                            --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                                <tr>
+                                    <td style="padding-bottom: 11px">
+                                        <svg class="picto"><use xlink:href="#play"</svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>RnB, Hip Hop, Latino, House, Electro</p>
+                                    </td>
+                                </tr>
+                            </table><!--
+                            --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                                <tr>
+                                    <td style="padding-bottom: 11px">
+                                        <svg class="picto"><use xlink:href="#map"</svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>15€ + 1 conso</p>
+                                        <p><small>(sur présentation de cet email)</small></p>
+                                    </td>
+                                </tr>
+                            </table><!--
+                        --></td>
+                        </tr>
+                    </table>
+                    </td>
                 </tr>
-            </table>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; padding: 20px 0;">
+                            <tr>
+                                <td>
+                                    <h2 style="font-size: 30px;">La meilleur soirée étudiante de Noël à Gap, avec en guest stars 4 navigatrices !</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr align="center">
+                                <td><!--
+                                --><table cellpadding="0" cellspacing="0" class="tuileMiss">
+                                    <tr>
+                                        <td style="padding-bottom: 11px">
+                                            <img src="../img/miss-edge.jpg" alt="Photo de Miss Edge" height="270"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Miss Edge</h4>
+                                            <p>A besoin de beaucoup d’attention !</p>
+                                        </td>
+                                    </tr>
+                                </table><!--
+                                --><table cellpadding="0" cellspacing="0" class="tuileMiss">
+                                    <tr>
+                                        <td style="padding-bottom: 11px">
+                                            <img src="../img/miss-firefox.jpg" alt="Photo de Miss Firefox" height="270"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Miss Firefox</h4>
+                                            <p>Libre et sauvage, tel un renard !</p>
+                                        </td>
+                                    </tr>
+                                </table><!--
+                                --><table cellpadding="0" cellspacing="0" class="tuileMiss">
+                                    <tr>
+                                        <td style="padding-bottom: 11px">
+                                            <img src="../img/miss-opera.jpg" alt="Photo de Miss Opera" height="270"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Miss Opera</h4>
+                                            <p>La norvégienne discrète et astucieuse !</p>
+                                        </td>
+                                    </tr>
+                                </table><!--
+                                --><table cellpadding="0" cellspacing="0" class="tuileMiss">
+                                    <tr>
+                                        <td style="padding-bottom: 11px">
+                                            <img src="../img/miss-safari.jpg" alt="Photo de Miss Safari" height="270"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>Miss Safari</h4>
+                                            <p>Ne perd pas le Nord !</p>
+                                        </td>
+                                    </tr>
+                                </table><!--
+                            --></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" style="width: 100%; padding: 20px 0">
+                            <tr align="center">
+                                <td>
+                                    <a class="bouton" href="#">Inscription sur @miw05</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
         </td>
     </tr>
 </table>
