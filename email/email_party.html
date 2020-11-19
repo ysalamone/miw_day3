@@ -12,46 +12,115 @@
         ul, ol, li, a, img {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         table, table td {
             border: 1px solid black;
-        }
-        .container {
-            width: 100%;
-            /*display: flex;
-            justify-content: center;*/
-            font-family: Arial;
+            color: #354052;
+            background: #fff;
         }
         .header {
             height: 400px;
             background: no-repeat center/cover url("../img/background_opt.jpg");
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
             text-align: right;
             padding: 15px;
         }
-        .header div {
-
+        .tuileInfo {
+            width: 190px;
+            padding: 35px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+        .picto {
+            width: 42px;
+            height: 42px;
+            padding-bottom: 11px;
+        }
+        @media screen and (min-width: 768px) {
+            .tuileInfo {
+                width: 256px;
+                display: inline-table;
+            }
         }
     </style>
 
-<table class="container">
+<table cellpadding="0" cellspacing="0" style="width: 100%; font-family: Arial">
     <tr>
-        <td class="header">
-            <div style="width: 100%; max-width: 700px;">
-                <p style="font-family: 'Arial Black'; font-size: 60px; line-height: 1;">XMAS PARTY</p>
+        <td class="header" align="center">
+            <div style="width: 100%; max-width: 768px;">
+                <p style="font-family: 'Arial Black'; font-size: 60px; line-height: 1; padding-top: 200px">XMAS PARTY</p>
                 <p style="font-size: 30px; padding-top: 15px;">Jeu. 19 déc. à GAP</p>
             </div>
         </td>
     </tr>
     <tr>
-        <td></td>
+        <td align="center">
+            <table cellpadding="0" cellspacing="0" style="/*position: relative; top: -50px;*/ width: 100%; max-width: 768px; padding: 20px 0; text-align: center">
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p style="font-size: 20px; line-height: 4">!! PLACES LIMITÉES !!</p>
+                        <p style="font-size: 30px;">À La + Grosse Soirée Étudiante</p>
+                    </td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" style="width: 100%; max-width: 768px; text-align: center">
+                <tr align="center">
+                    <td><!--
+                    --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                            <tr>
+                                <td>
+                                    <svg class="picto"><use xlink:href="#map" </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>1er étage</p>
+                                    <p>Bâtiment MIW</p>
+                                    <p>15/12/2019 à 20h</p>
+                                </td>
+                            </tr>
+                        </table><!--
+                        --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                            <tr>
+                                <td>
+                                    <svg class="picto"><use xlink:href="#play" </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>RnB, Hip Hop, Latino, House, Electro</p>
+                                </td>
+                            </tr>
+                        </table><!--
+                        --><table cellpadding="0" cellspacing="0" class="tuileInfo">
+                            <tr>
+                                <td>
+                                    <svg class="picto"><use xlink:href="#map" </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>15€ + 1 conso</p>
+                                    <p><small>(sur présentation de cet email)</small></p>
+                                </td>
+                            </tr>
+                        </table><!--
+                    --></td>
+                </tr>
+            </table>
+        </td>
     </tr>
 </table>
+
+<div hidden>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="euro" viewBox="0 0 28.391 39.5"><defs><style>.a{fill:#c30078;}</style></defs><g transform="translate(-56.528)"><path class="a" d="M84.891,37.538l-.982-4.46a.855.855,0,0,0-.421-.589.837.837,0,0,0-.729-.056l-.141.056-.337.084c-.15.037-.323.079-.519.126s-.425.093-.687.14-.538.089-.827.126-.6.07-.939.1-.673.042-1.01.042a11.293,11.293,0,0,1-10.6-7.126H78.55a.907.907,0,0,0,.869-.73l.673-3.142a.912.912,0,0,0-.168-.757.877.877,0,0,0-.7-.337H66.347a25.237,25.237,0,0,1,0-2.946h13.69a.819.819,0,0,0,.9-.729l.673-3.2a.92.92,0,0,0-.9-1.066H67.581A11.083,11.083,0,0,1,71.79,8.136a11.507,11.507,0,0,1,6.34-1.8,2.5,2.5,0,0,1,.827.028,6.394,6.394,0,0,0,.814.07,4.7,4.7,0,0,1,.729.084l.632.1.491.1c.141.028.248.051.323.07l.112.028a.8.8,0,0,0,.673-.07.823.823,0,0,0,.393-.547L84.33,1.74a.931.931,0,0,0-.084-.673,1.066,1.066,0,0,0-.562-.421A22.373,22.373,0,0,0,78.242,0,18.661,18.661,0,0,0,67.006,3.591a18.277,18.277,0,0,0-6.831,9.482H57.426a.864.864,0,0,0-.9.9v3.2a.864.864,0,0,0,.9.9h1.88q-.085,1.347-.028,2.946H57.426a.91.91,0,0,0-.9.9v3.17a.909.909,0,0,0,.9.9h2.665a18.116,18.116,0,0,0,6.677,9.861A18.663,18.663,0,0,0,78.242,39.5c.356,0,.716-.009,1.08-.028s.706-.047,1.024-.084.631-.079.94-.126.589-.093.841-.141.491-.093.715-.14.426-.1.6-.155.327-.1.449-.125a1.381,1.381,0,0,0,.294-.1l.141-.028a.881.881,0,0,0,.477-.407A.823.823,0,0,0,84.891,37.538Z" transform="translate(0 0)"/></g></symbol>
+        <symbol id="map" viewBox="0 0 30.516 42"><defs><style>.a{fill:#c30078;}</style></defs><g transform="translate(-70.573)"><g transform="translate(70.573)"><path class="a" d="M85.831,0A15.252,15.252,0,0,0,70.573,15.211c0,10.409,13.655,25.69,14.236,26.335a1.377,1.377,0,0,0,2.045,0c.581-.645,14.236-15.926,14.236-26.335A15.252,15.252,0,0,0,85.831,0Zm0,22.864a7.653,7.653,0,1,1,7.677-7.653A7.673,7.673,0,0,1,85.831,22.864Z" transform="translate(-70.573)"/></g></g></symbol>
+        <symbol id="play" viewBox="0 0 42 42"><defs><style>.a{fill:#c30078;}</style></defs><path class="a" d="M21,0A21,21,0,1,0,42,21,21.024,21.024,0,0,0,21,0ZM31.894,21.578l-15.4,10.5a.7.7,0,0,1-.394.122.7.7,0,0,1-.7-.7v-21a.7.7,0,0,1,1.095-.578l15.4,10.5a.7.7,0,0,1,0,1.156Z"/></symbol>
+    </svg>
+</div>
 
 </body>
 </html>
