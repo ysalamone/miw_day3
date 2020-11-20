@@ -96,7 +96,7 @@ form > * {
 .sent_icon {
     display: none;
     background-color: #fff8;
-    padding: 21px 55px 51px 100px;
+    padding: 20px 0;
     border: 1px solid #707070;
     border-radius: 32px;
 }
