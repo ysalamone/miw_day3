@@ -48,6 +48,15 @@ body {
     align-items: center;
 }
 
+/* selon la classe du body, cacher le formulaire et afficher la div de confirmation */
+body.delivery_sent form {
+    display: none;
+}
+
+body.delivery_sent .sent_icon {
+    display: initial;
+}
+
 form {
     max-width: 100%;
     margin: 0 auto;
@@ -83,8 +92,17 @@ form > * {
     margin-left: 10px;
 }
 
-.delivery_sent {
-    background-color: green;
+/* par défaut, n'est pas affiché */
+.sent_icon {
+    display: none;
+    background-color: #fff8;
+    padding: 21px 55px 51px 100px;
+    border: 1px solid #707070;
+    border-radius: 32px;
+}
+
+.sent_icon svg {
+    fill: #C30078;
 }
 
 @media screen and (min-width: 768px) {
