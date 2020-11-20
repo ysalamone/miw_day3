@@ -17,7 +17,7 @@ if (!empty($_GET['delivery']) and $_GET['delivery'] === "sent") {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf8"/>
+    <meta charset="utf-8"/>
     <title>MIW Party</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
