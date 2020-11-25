@@ -19,10 +19,14 @@
             padding: 0 16px;
         }
         .tuileInfo {
-            width: 190px;
+            width: 100%;
+            max-width: 220px; /* responsive Thunderbird */
+            display: inline-table;
         }
         .tuileMiss {
-            width: 290px;
+            width: 100%;
+            max-width: 334px; /* responsive Thunderbird */
+            display: inline-table;
         }
         @media screen and (min-width: 768px) {
             .header {
@@ -33,14 +37,6 @@
                 position: relative;
                 top: -50px;
                 padding: 0;
-            }
-            .tuileInfo {
-                width: 233px;
-                display: inline-table;
-            }
-            .tuileMiss {
-                width: 350px;
-                display: inline-table;
             }
         }
     </style>
