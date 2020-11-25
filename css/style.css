@@ -42,7 +42,7 @@ html {
 
 body {
     height: 60%;
-    background: no-repeat center/cover url("../img/background_opt.jpg");
+    background: no-repeat center/cover url("../img/background_mobile.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +106,10 @@ form > * {
 }
 
 @media screen and (min-width: 768px) {
+
+    body {
+        background: no-repeat center/cover url("../img/background_desktop.jpg");
+    }
 
     form {
         flex-direction: row;
